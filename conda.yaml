@@ -1,0 +1,21 @@
+name: asr
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - pip
+  - python==3.8
+# inference
+  - cpuonly
+  - pytorch==1.10
+  - torchaudio  
+  - numpy
+  - pip:  
+    - transformers
+    - librosa
+    - tqdm
+    - click
+    - cloudpickle
+    - datasets
+    - sentencepiece
+    
